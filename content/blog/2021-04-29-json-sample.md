@@ -7,6 +7,5 @@ description: my json sample
 	"id": 1,
 	"title": "delectus aut autem",
 	"completed": false,
-        "image": static/img/user-a.jpg,
-
+        "image": static/img/user-a.jpg
 }
