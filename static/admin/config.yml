@@ -55,8 +55,6 @@ collections:
     create: true
     format: 'frontmatter'
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    # editor:
-    #   preview: true
     fields:
       - { label: 'Member Name', name: 'member-name', widget: 'string', required: true }
       - { label: 'Member Photo Path', name: 'member-photo-path', widget: 'string', required: true }
