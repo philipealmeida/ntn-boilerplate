@@ -51,7 +51,7 @@ collections:
 
   - name: 'team'
     label: 'Team'
-    folder: 'content/team '
+    folder: 'content/team'
     create: true
     format: 'frontmatter'
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
