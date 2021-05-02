@@ -48,6 +48,19 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string', required: true }
       - { label: 'Description', name: 'description', widget: 'string', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown', required: false }
+
+  - name: 'team'
+    label: 'Team'
+    folder: 'content/team '
+    create: true
+    format: 'frontmatter'
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    # editor:
+    #   preview: true
+    fields:
+      - { label: 'Member Name', name: 'member-name', widget: 'string', required: true }
+      - { label: 'Member Photo Path', name: 'member-photo-path', widget: 'string', required: true }
+      - { label: 'Member Info', name: 'member-info', widget: 'string', required: false }
   - name: 'projects'
     label: 'Projects'
     label_singular: 'Project'
