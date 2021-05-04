@@ -59,6 +59,7 @@ collections:
       - { label: 'Member Name', name: 'member-name', widget: 'string', required: true }
       - { label: 'Member Photo Path', name: 'member-photo-path', widget: 'string', required: true }
       - { label: 'Member Info', name: 'member-info', widget: 'string', required: false }
+
   - name: 'projects'
     label: 'Projects'
     label_singular: 'Project'

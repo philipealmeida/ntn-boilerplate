@@ -9,14 +9,29 @@
 
 <script>
 export default {
-  async asyncData({ $content, error }) {
-    let posts
-    try {
-      posts = await $content('team').fetch()
-    } catch (e) {
-      error({ message: 'Team posts not found' })
+  data() {
+    return {
+      ob: null,
     }
-    return { posts }
+  },
+
+  async asyncData({ $content, error }) {
+    let team
+    try {
+      team = await $content('team').fetch()
+    } catch (e) {
+      error({ message: 'Team post not found' })
+    }
+    return { team }
+  },
+  methods: {
+    async getUser() {
+      this.ob = await this.$axios.$get('https://jsonplaceholder.typicode.com/todos/1')
+      console.log(this.ob)
+    },
+  },
+  created() {
+    this.getUser()
   },
 }
 </script>
